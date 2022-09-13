@@ -23,13 +23,11 @@
   width: 900px;
   margin: 0 auto;
 }
-.all .one {
-  height: 70px;
-}
 .all .one nav {
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
+  height: 70px;
 }
 .all .one nav .logo-box {
   gap: 10px;
@@ -144,12 +142,12 @@
   font-size: 0.8em;
 }
 .all .four {
-  height: 500px;
   background-color: #F9F9F9;
 }
 .all .four .section {
   padding: 2em 0;
   text-align: center;
+  height: 500px;
 }
 .all .four .section h2 {
   color: #272727;
@@ -201,12 +199,12 @@
   font-weight: 500;
 }
 .all footer {
-  height: 200px;
   background-color: #F9F9F9;
 }
 .all footer .section {
   padding: 3em 0;
   gap: 40px;
+  height: 200px;
 }
 .all footer .section img {
   background-color: #272727;
@@ -222,4 +220,37 @@
 }
 .all footer .section ul li:first-of-type {
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .all .section {
+    width: 100%;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 2em !important;
+    justify-content: center !important;
+  }
+  .all .one nav {
+    justify-content: center;
+  }
+  .all .one nav .list {
+    display: none;
+  }
+  .all .two .section .right-side {
+    display: none;
+  }
+  .all .three .section .left-side {
+    display: none;
+  }
+  .all .three .section .right-side .text-box {
+    width: auto;
+  }
+  .all .four .section .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .all footer .section {
+    flex-wrap: wrap;
+  }
 }

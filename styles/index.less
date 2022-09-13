@@ -13,12 +13,11 @@
 
 .all {
     .one {
-        height: 70px;
-
         nav {
             justify-content: space-between;
             align-items: center;
             padding: 1em 0;
+            height: 70px;
 
             .logo-box {
                 gap: 10px;
@@ -118,9 +117,7 @@
         }
     }
 
-    .three {
-       
-
+    .three {       
         .section{
             align-items: center;
             justify-content: space-between;
@@ -168,13 +165,13 @@
         }
     }
 
-    .four {
-        height: 500px;
+    .four {       
         background-color: @white-200;
 
         .section {
             padding: 2em 0;
             text-align: center;
+            height: 500px;
 
             h2 {
                 color: @black;
@@ -237,13 +234,12 @@
         }
     }
 
-    footer {
-        height: 200px;
+    footer {   
         background-color: @white-200;
-
         .section {
             padding: 3em 0;
             gap: 40px;
+            height: 200px;
 
             img {
                 background-color: @black;
@@ -263,6 +259,72 @@
                 li:first-of-type {
                     font-weight: 600;
                 }
+            }
+        }
+    }
+}
+
+//mobile
+
+@media (max-width: 768px) {
+    
+    .all{
+        .section{
+            width: 100%;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 2em !important;
+            justify-content: center !important;
+        }
+
+        .one{
+            nav{
+                justify-content: center;
+
+                .list{
+                    display: none;
+                }
+            }
+        }
+
+        .two{
+            .section{                
+                .right-side{
+                    display: none;
+                }
+            }           
+        }
+
+        .three{
+            .section{                          
+
+                .left-side{
+                    display: none;                
+                }
+
+                .right-side{
+                    .text-box{
+                        width: auto;
+                    }
+                }
+            }
+           
+        }
+
+        .four{
+            .section{        
+                .content{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+            }
+        }
+
+        footer{
+            .section{               
+                flex-wrap: wrap;                           
             }
         }
     }
