@@ -1,0 +1,225 @@
+@import url(reset.css);
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Ew-.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCu170w-.ttf) format('truetype');
+}
+* {
+  font-family: 'Montserrat';
+}
+.flex {
+  display: flex;
+}
+.section {
+  width: 900px;
+  margin: 0 auto;
+}
+.all .one {
+  height: 70px;
+}
+.all .one nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+.all .one nav .logo-box {
+  gap: 10px;
+  align-items: center;
+}
+.all .one nav .logo-box img {
+  background-color: #272727;
+  height: 40px;
+  width: 40px;
+}
+.all .one nav .logo-box p {
+  color: #272727;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.all .one nav .list {
+  align-items: center;
+  gap: 30px;
+}
+.all .one nav .list li {
+  color: #272727;
+  font-weight: 500;
+  font-size: 1em;
+}
+.all .one nav .list .icon img {
+  width: 20px;
+  height: 20px;
+}
+.all .two {
+  background-color: #F9F9F9;
+  text-align: left;
+}
+.all .two .section {
+  height: 500px;
+  justify-content: space-between;
+}
+.all .two .section .left-side {
+  align-self: center;
+}
+.all .two .section .left-side h2 {
+  color: #272727;
+  font-weight: 600;
+  font-size: 2em;
+  padding-bottom: 0.5em;
+  text-align: left;
+}
+.all .two .section .left-side p {
+  color: #797979;
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: 1em;
+}
+.all .two .section .left-side .infos {
+  align-items: center;
+  gap: 30px;
+}
+.all .two .section .left-side .infos button {
+  text-align: center;
+  background-color: #272727;
+  width: 150px;
+  height: 35px;
+}
+.all .two .section .left-side .infos button a {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.all .two .section .left-side .infos a {
+  color: #272727;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.all .two .section .right-side img {
+  height: 100%;
+  width: 450px;
+}
+.all .three .section {
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  height: 400px;
+}
+.all .three .section .left-side img {
+  width: 300px;
+  box-shadow: -27px -30px;
+}
+.all .three .section .right-side .text-box {
+  background-color: #272727;
+  height: 130px;
+  width: 431px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.all .three .section .right-side .text-box h2,
+.all .three .section .right-side .text-box p {
+  text-align: left;
+  color: #fff;
+}
+.all .three .section .right-side .text-box h2 {
+  font-weight: 600;
+  font-size: 1em;
+  padding-bottom: 0.8em;
+}
+.all .three .section .right-side .text-box p {
+  font-size: 0.8em;
+}
+.all .three .section .right-side a {
+  color: #272727;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+.all .four {
+  height: 500px;
+  background-color: #F9F9F9;
+}
+.all .four .section {
+  padding: 2em 0;
+  text-align: center;
+}
+.all .four .section h2 {
+  color: #272727;
+  font-weight: 600;
+  font-size: 2em;
+  padding-bottom: 0.4em;
+}
+.all .four .section p {
+  color: #797979;
+  font-size: 1em;
+  padding-bottom: 0.8em;
+  font-weight: 500;
+}
+.all .four .section .content {
+  justify-content: space-between;
+}
+.all .four .section .content img {
+  width: 280px;
+  height: 330px;
+}
+.all .five {
+  height: 200px;
+}
+.all .five .section {
+  padding: 2em 0;
+  text-align: center;
+}
+.all .five .section h2 {
+  font-weight: 600;
+  color: #272727;
+  font-size: 2em;
+  padding-bottom: 0.4em;
+}
+.all .five .section p {
+  color: #797979;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+.all .five .section button {
+  border: 1px solid #272727;
+  background-color: #fff;
+  text-align: center;
+  width: 227px;
+  height: 40px;
+}
+.all .five .section button a {
+  color: #272727;
+  font-size: 1em;
+  font-weight: 500;
+}
+.all footer {
+  height: 200px;
+  background-color: #F9F9F9;
+}
+.all footer .section {
+  padding: 3em 0;
+  gap: 40px;
+}
+.all footer .section img {
+  background-color: #272727;
+  height: 40px;
+  width: 40px;
+}
+.all footer .section ul li {
+  color: #272727;
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: 0.4em;
+  cursor: pointer;
+}
+.all footer .section ul li:first-of-type {
+  font-weight: 600;
+}
